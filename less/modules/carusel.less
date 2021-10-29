@@ -1,0 +1,143 @@
+//@import url(../setup/_setup.less);
+
+
+@import url(../setup/_setup.less);
+.owl-carousel .item {
+
+    padding: 20px;
+
+    a {
+        display: block;
+    }
+}
+
+.owl-dots {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+
+    .owl-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background: #dae5ff;
+        margin: 0 10px;
+
+        &.active {
+            background: @main;
+            width: 50px;
+        }
+    }
+
+    @media (max-width: 1020px) {
+        // display: none;
+    }
+}
+
+.owl-nav {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    width: 100%;
+
+    .owl-prev {
+        left: -120px
+    }
+
+    .owl-next {
+        right: -120px;
+    }
+
+    @media (max-width:480px) {
+        .owl-prev {
+            left: -50px
+        }
+
+        .owl-next {
+            right: -50px;
+        }
+    }
+
+    span {
+
+        display: block;
+        background: transparent;
+        font-size: 30px;
+
+    }
+
+    button {
+        background: transparent;
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+        top: 30%;
+        position: absolute;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+
+    @media (max-width: 1020px) {
+        // display: none;
+    }
+}
+
+.pgwSlider {
+    .ps-current{
+        width: 570px;
+        max-height: 330px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow:1px 1px 20px rgba(0, 0, 0,.2);
+        margin-bottom: 40px;
+        ul{    overflow: hidden;
+            position: relative;}
+        img{ width: 100%;max-width: 100%;}
+        li{max-width: 570px;}
+    }
+    .ps-list{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            width: 130px;;max-width: 130px;
+            height: 100px; 
+            margin: 0 10px;
+            border-radius: 10px;box-shadow:1px 1px 20px rgba(0, 0, 0,.2);
+        }
+        img{ width: 100%;max-width: 130px;}
+    }
+
+}
+
+.pgwSlider > li:hover,
+.pgwSlider > ul > li:hover {
+    opacity: 1 !important;
+}
+
+ul.pgwSlider > li img,
+.pgwSlider > ul > li img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider > li,
+.pgwSlider > .ps-list > li {
+    height: 50px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+    transition: opacity 200ms linear;
+}
+
+.pgwSlider > li:last-child,
+.pgwSlider > ul > li:last-child {
+    margin-bottom: 0;
+}

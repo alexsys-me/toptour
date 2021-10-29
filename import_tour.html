@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <title>Туры за рубеж</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="image/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicons/favicon-16x16.png">
+    <link rel="manifest" href="image/favicons/site.webmanifest">
+    <link rel="mask-icon" href="image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="css/main.css">   
+    <link rel="stylesheet" href="css/_setup.css">
+    <link rel="stylesheet" href="css/_reboot.css">
+    <link rel="stylesheet" href="css/_normalize.css">
+    <link rel="stylesheet" href="css/_ui.css">
+    <link rel="stylesheet" href="css/_icon.css">
+    <link rel="stylesheet" href="css/fotter.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/carusel.css">
+    <link rel="stylesheet" href="css/accordion.css">-->
+
+
+    <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+    <script src="js/main.js" type="text/javascript"></script>
+    <link rel="stylesheet/less" href="less/main.less" type="text/css" />
+
+    <script src="js/less.js" type="text/javascript"></script>
+
+</head>
+
+<body class="homepage">
+    <!----SELECT_TOUR_WINDOW--->
+    <div class="popup">
+        <div class="popup_close"></div>
+        <div class="quiz white">
+            <h4>Индивидуальный <br> подбор тура</h4>
+            <span class="quiz_title">ответьте на 5 вопросов бота Емели</span>
+            <div class="quiz_user ">
+                <img src="images/user.png" alt="">
+                <div class="quiz_user_text">
+                    <p>Бот Емеля</p>
+                    <span>менедженр по туризму</span>
+                </div>
+            </div>
+            <form class="quiz_steps">
+                <div class="quiz_steps-step step-1" style="display:block">
+                    <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
+
+                    <input type="text" class="input-blue">
+                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+                <div class="quiz_steps-step step-2">
+
+                    <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
+                    <label><input type="checkbox" ><span></span>Пляжный отдых</label>
+                    <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
+                    <label><input type="checkbox" ><span></span>Новогодний тур</label>
+                    <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
+                    <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
+                    <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
+                    <label><input type="checkbox" ><span></span>Морской Круиз</label>
+                    <label><input type="checkbox" ><span></span>Горящий тур</label>
+                    <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
+
+                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+                <div class="quiz_steps-step step-3">
+                    <div class="quiz_steps-title">Укажите количество человек в туре</div>
+                    <span>Количество взрослых</span>
+                    <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                    <span>Количество детей</span>
+                    <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+                <div class="quiz_steps-step step-4">
+                    <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
+
+                    <div class="dev-num">
+                        <input type="text" class="input-blue">
+                        <span>дней</span>
+                    </div>
+                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+
+                <div class="quiz_steps-step step-5">
+                    <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
+                    <div class="dev-num">
+                        <input type="text" class="input-blue">
+                        <span class="befor">до</span>
+                        <span>рублей</span>
+                    </div>
+                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+                <div class="quiz_steps-step step-6">
+                    <div class="quiz_steps-title">Укажите данные для связи</div>
+                    <input type="text" class="input-blue">
+                    <em>менеджер оповестит вас
+                    о подходящих турах, акциях по соотношению цена,
+                    качества, ваши интересы</em>
+                    <button class="btn orange">Оставить заявку</button>
+                </div>
+
+            </form>
+            <div class="des">подберем идеальный тур индвидуально для Вас</div>
+        </div>
+    </div>
+
+
+
+    <div class="menutriger overlay"></div>
+    <div class="megamenu">
+        <div class="close menutriger">x</div>
+        <div class="super_logo">
+            <img src="images/s-logo.png" />
+        </div>
+        <div class="super_setting">
+            <div class="super_setting-contakt">
+                <a href="#" class="wp-icon">написать в WhatsApp</a>
+                <a href="tel:74952211987" class="phone"> +7 (495) 221 19 87</a>
+            </div>
+            <a href="#" class="btn blue plane-icon"> подобрать тур</a>
+        </div>
+
+        <ul class="fix_menu">
+            <li class="menu_li active"><a href="#">Туры за рубеж</a></li>
+            <li class="menu_li"><a href="#">Туры по России</a></li>
+            <li class="menu_li hot"><a href="#">Горящие туры</a></li>
+            <li class="menu_li"><a href="#">Экскурсии</a></li>
+            <li class="menu_li"><a href="#">О компании</a></li>
+            <li class="menu_li"><a href="#">Где купить</a></li>
+        </ul>
+        <ul classs="sub_menu">
+            <li><a href="#">Визы и документы</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Корпоративным клиентам</a></li>
+        </ul>
+
+    </div>
+    <header>
+        <div class="supergrey  grey">
+            <div class="wrap unwrap">
+                <span class="time_work">Режим работы: пн-вс 10:00-22:00</span>
+                <a href="#">Визы и документы</a>
+                <a href="#">Акции</a>
+                <a href="#">Корпоративным клиентам</a>
+            </div>
+        </div>
+        <div class="super wrap unwrap">
+            <div class="sendwich icon menutriger"></div>
+            <div class="super_logo">
+                <a href="#">
+                    <img src="images/s-logo.png" />
+                </a>
+            </div>
+            <div class="super_setting">
+                <div class="super_setting-contakt">
+                    <a href="#" class="wp-icon">написать в WhatsApp</a>
+                    <a href="tel:74952211987" class="phone"> +7 (495) 221 19 87</a>
+                </div>
+                <a href="#" class="btn blue plane-icon"> подобрать тур</a>
+            </div>
+
+        </div>
+
+        <div class="menu wrap">
+            <ul class="menu_ul wrap unwrap">
+                <li class="menu_li active"><a href="#">Туры за рубеж</a></li>
+                <li class="menu_li"><a href="#">Туры по России</a></li>
+                <li class="menu_li hot"><a href="#">Горящие туры</a></li>
+                <li class="menu_li"><a href="#">Экскурсии</a></li>
+                <li class="menu_li"><a href="#">О компании</a></li>
+                <li class="menu_li"><a href="#">Где купить</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner" style=" background: url(images/main-export.jpg);">
+        <ul class="bredcrumb">
+            <li><a href="#">Главная</a></li>
+            <li><span>Туры за рубеж</span></a>
+            </li>
+        </ul>
+        <div class="banner_title wrap">
+            <h1>Туры за рубеж</h1>
+            <span>Мы рекомендуем обратить внимание на выделенные страны и курорты. Действуют специальные предложения, сезонные скидки и горящие туры, подробности о которых, вы можете узнать в офисах компании, по бесплатному единому многоканальному телефону +7 (495) 221-19-87, или прямо на сайте, воспользуйтесь услугой онлайн консультанта, мы с удовольствием ответим на все Ваши вопросы.</span>
+        </div>
+    </div>
+    <!----search---->
+    <section class="wrap search">
+        <script type="text/javascript" src="https://ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            sletat.createModule5('Search', {
+                files: ["https://toptour.alexsys.me/css/sletat.css"],
+                enabledCurrencies: ["RUB", "EUR", "USD"],
+                useCard: false
+            });
+        </script>
+        <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
+
+        <!----tours---->
+        <div class="tours">
+            <a href="#" class="tours_keys">
+                <img src="img/maldiva.jpg" alt="">
+                <span>Доминикана</span>
+            </a>
+            <a href="#" class="tours_keys">
+                <img src="img/dominik.jpg" alt="">
+                <span>Мальдивы</span>
+            </a>
+            <a href="#" class="tours_keys">
+                <img src="img/mexico.jpg" alt="">
+                <span>Мексика</span>
+            </a>
+            <a href="#" class="tours_keys">
+                <img src="img/slide-3.jpg" alt="">
+                <span>Египет</span>
+            </a>
+            <a href="#" class="tours_keys">
+                <img src="img/kuba.jpg" alt="">
+                <span>Куба</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="wrap quote">
+        <p>Мы делаем покупку путешествий комфортной. Не выходя из дома, всего в несколько кликов можете приобрести путевку на отдых в любой стране.</p>
+    </section>
+
+    <section class="grey palm">
+        <div class="palm_round"></div>
+        <div class="wrap">
+
+            <h2 class="cyan">Берем все заботы на себя</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="icon"><img src="images/icon-1.svg" alt=""></div>
+                    <h5>Индивидуально <br>подбираем туры</h5>
+                    <p>Индивидуально подбираем туры. Наши опытные менеджеры всегда готовы подобрать оптимальный тур по вашим критериям. Просто оставьте заявку или позвоните по номеру 8-800-302-37-40.</p>
+                </div>
+                <div class="col">
+                    <div class="icon"><img src="images/icon-2.svg" alt=""></div>
+                    <h5>Оформляем<br> онлайн </h5>
+                    <p>Вам больше не нужно тратить время на поездки в офис турагентства. Процесс оформления проходит в два клика. Принимаем оплату картой и через терминалы.</p>
+                </div>
+                <div class="col">
+                    <div class="icon"><img src="images/icon-3.svg" alt=""></div>
+                    <h5>Помогаем оформить визу <br> и заграничный паспорт</h5>
+                    <p>Поможем вам с оформлением загранпаспорта или визы в короткие сроки, если вам предстоит визит в страну, где они требуются. Также посмотрите нашу подборку туров в безвизовые страны.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----hot_tour ---->
+    <section>
+        <div class="wrap hot_tour">
+            <h2 class="cyan">Горящие туры и спецпредложения <span>с вылетом из Москвы</span></h2>
+            <div class="hot_tour-frame">
+                <div class="schowcase">
+                    <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
+                    <script type="text/javascript">
+                        sletat.FrameHot.$create({
+                            toursCount: 4,
+                            useCard: false,
+                            enabledCurrencies: ["RUB"],
+                            files: ["https://toptour.alexsys.me/css/sletat.css"]
+                        });
+                    </script>
+                    <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
+                </div>
+                <!----quiz ---->
+                <div class="quiz">
+                    <h4>Индивидуальный <br> подбор тура</h4>
+                    <span class="quiz_title">ответьте на 5 вопросов бота Емели</span>
+                    <div class="quiz_user">
+                        <img src="images/user.png" alt="">
+                        <div class="quiz_user_text">
+                            <p>Бот Емеля</p>
+                            <span>менедженр по туризму</span>
+                        </div>
+                    </div>
+                    <form class="quiz_steps">
+                        <div class="quiz_steps-step step-1" style="display:block">
+                            <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
+
+                            <input type="text" class="input-blue">
+                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                        </div>
+                        <div class="quiz_steps-step step-2">
+
+                            <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
+                            <label><input type="checkbox" ><span></span>Пляжный отдых</label>
+                            <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
+                            <label><input type="checkbox" ><span></span>Новогодний тур</label>
+                            <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
+                            <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
+                            <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
+                            <label><input type="checkbox" ><span></span>Морской Круиз</label>
+                            <label><input type="checkbox" ><span></span>Горящий тур</label>
+                            <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
+
+                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                        </div>
+                        <div class="quiz_steps-step step-3">
+                            <div class="quiz_steps-title">Укажите количество человек в туре</div>
+                            <span>Количество взрослых</span>
+                            <select>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                            <span>Количество детей</span>
+                            <select>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                        </select>
+                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                        </div>
+
+                        <div class="quiz_steps-step step-4">
+                            <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
+
+                            <div class="dev-num">
+                                <input type="text" class="input-blue">
+                                <span>дней</span>
+                            </div>
+                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                        </div>
+
+
+                        <div class="quiz_steps-step step-5">
+                            <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
+                            <div class="dev-num">
+                                <input type="text" class="input-blue">
+                                <span class="befor">до</span>
+                                <span>рублей</span>
+                            </div>
+                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                        </div>
+
+                        <div class="quiz_steps-step step-6">
+                            <div class="quiz_steps-title">Укажите данные для связи</div>
+                            <input type="text" class="input-blue">
+                            <em>менеджер оповестит вас
+                            о подходящих турах, акциях по соотношению цена,
+                            качества, ваши интересы</em>
+                            <button class="btn orange">Оставить заявку</button>
+                        </div>
+
+                    </form>
+                    <div class="des">подберем идеальный тур индвидуально для Вас</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----smart_block ---->
+    <section class="smart castle_bg">
+        <div class="wrap">
+            <div class="nowrap">
+                <div class="smart_content">
+                    <h3><strong class="cyan">Туристическое агентство <br>
+                        Туры от Профи </strong> нацелено <br>на лояльность и положительные <br>отзывы клиентов</h3>
+                    <p class="warning">Наша миссия дать полную консультацию для людей с любым багажом знаний для путешествий. Мы подобрали одних из лучших менеджеров в сфере туризма со стажем не менее 8 лет и активных путешественников, готовые подсказать и рассказать Вам
+                        все о стране и путевки в которую вы собираетесь поехать отдохнуть.</p>
+                </div>
+                <ul class="pgwSlider">
+                    <li><img src="img/slide-1.jpg" data-large-src="img/slide-1.jpg"></li>
+                    <li><img src="img//slide-2.jpg"></li>
+                    <li><img src="img//slide-3.jpg"></li>
+                </ul>
+            </div>
+
+
+
+            <div class="quote">
+                <img src="images/plane_cyan.png" alt="">
+                <p>Путешествуйте с удовольствием <br> об остальном позаботимся мы!</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="grey ">
+        <h2 style="text-align: center;">Работаем только с надежными партнерами</h2>
+        <div class="wrap">
+            <div class="owl-carousel owl-theme brand">
+                <div class="item"><img src="img/partner-1.png" alt=""></div>
+                <div class="item"><img src="img/partner-2.png" alt=""></div>
+                <div class="item"><img src="img/partner-3.png" alt=""></div>
+                <div class="item"><img src="img/partner-4.png" alt=""></div>
+                <div class="item"><img src="img/partner-5.png" alt=""></div>
+                <div class="item"><img src="img/partner-1.png" alt=""></div>
+                <div class="item"><img src="img/partner-2.png" alt=""></div>
+                <div class="item"><img src="img/partner-3.png" alt=""></div>
+                <div class="item"><img src="img/partner-4.png" alt=""></div>
+                <div class="item"><img src="img/partner-5.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!----advert_block ---->
+    <section class="wrap">
+        <div class="installments">
+            <div class="installments_birka">4 месяц под 0%</div>
+            <div class="installments_contetn">
+                <h2>Возьмите путевку в рассрочку или кредит</h2>
+                <p>Специально для Вас <br> у нас есть выгодные условия - 4 месяца под 0% или индивидуальный подбор условий</p>
+            </div>
+            <div class="installments_form">
+                <input type="text" placeholder="Ваше Имя" class="input_white">
+                <input type="text" placeholder="Телефон" class="input_white">
+                <input type="submit" placeholder="оставить заявку" class="btn orange percent">
+            </div>
+            <img src="images/hand-pic-1.png" alt="">
+
+
+        </div>
+    </section>
+
+
+    <!----smart_block ---->
+    <section class="smart palm_bg fon_stambul">
+        <div class="wrap">
+            <div class="smart_content">
+                <h3><strong class="cyan">Туристическое агентство Туры от Профи </strong> нацелено на лояльность <br> и положительные отзывы клиентов</h3>
+                <p class="warning">Наша миссия дать полную консультацию для людей с любым багажом знаний для путешествий. Мы подобрали одних из лучших менеджеров в сфере туризма со стажем не менее 8 лет и активных путешественников, готовые подсказать и рассказать Вам все
+                    о стране и путевки в которую вы собираетесь поехать отдохнуть.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!----Подвал ---->
+
+    <!----Подвал ---->
+    <footer class="fotter">
+        <div class="fotter_bottom">
+            <div class="wrap">
+                <div class="nowrap">
+                    <div class="seller">
+                        <div class="row">
+                            <div class="col">
+                                <div class="seller_title first-child">Подписаться на рассылку горящих туров</div>
+                                <form action="" class="seller_form">
+                                    <input type="text" class="input_white" placeholder="Email">
+                                    <input type="submit" class="btn orange" placeholder="ПОДПИСАТЬСЯ НА НОВОСТИ">
+                                </form>
+                            </div>
+                            <div class="col">
+                                <div class="seller_title">Онлайн услуги
+                                    <div class="subtile"></div>
+                                </div>
+                                <ul class="seller_ul">
+                                    <li><a href="#">Поиск туров за рубеж</a></li>
+                                    <li><a href="#">Поиск туров по России</a></li>
+                                    <li><a href="#">Поиск горящих туров</a></li>
+                                    <li><a href="#">Поиск экскурсий с гидом</a></li>
+                                    <li><a href="#">Оформление виз и документов</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <div class="seller_title">Популярные страны
+                                    <div class="subtile"></div>
+                                </div>
+                                <ul class="seller_ul country">
+                                    <li><a href="#">Кипр</a></li>
+                                    <li><a href="#">Мексика</a></li>
+                                    <li><a href="#">Египет</a></li>
+                                    <li><a href="#">Мальдивы</a></li>
+                                    <li><a href="#">Мальдивы</a></li>
+                                    <li><a href="#">Кипр</a></li>
+                                    <li><a href="#">Мексика</a></li>
+                                    <li><a href="#">Египет</a></li>
+                                    <li><a href="#">Мальдивы</a></li>
+                                    <li><a href="#">Мальдивы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="subtext">Горящие туры из Москвы, поиск и бронирование туров онлайн в Турцию, Грецию, Кипр, Сочи и Черное море, – «Туры от профи»! Гарантия вашего безопасного и комфортного отдыха. Пользовательское соглашение, рекомендуем уточнять конечную
+                                стоимость услуг у наших экспертов.</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review_titl">Отзывы</div>
+                        <img src="images/yandexrev.png" alt="">
+                        <br><br>
+                        <div class="review_titl">Мы в Instagram</div>
+                        <div class="review_insta">
+                            <img src="images/instagram.png" alt="">
+                            <a href="#" class="btn blue">@tour.msk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="fotter_bottom-title">Уполномоченное <br> турагентство <br> Anex Tour</div>
+                        <div class="fotter_bottom-contakt">
+                            <p>Тел. <span>+7 (495) 221 19 87</span></p>
+                            <p>Моб. <span>+7 (495) 221 19 87</span></p>
+                            <p>e-mail. <span>butovo@tour-msk.pro</span></p>
+                        </div>
+                        <div class="fotter_bottom-place">
+                            <p><strong>Домодедовская, ТК VEGAS </strong><br> (между 1-м и 2-м входом, 2 эт.) </p>
+                            <p><strong>Улица Bazaar, </strong><br> пересечение 24 км. МКАД и Каширского шоссе </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fotter_bottom-title">Турагентство <br>Sunmar</div>
+                        <div class="fotter_bottom-contakt">
+                            <p>Тел. <span>+7 (495) 221 19 87</span></p>
+                            <p>Моб. <span>+7 (495) 221 19 87</span></p>
+                            <p>e-mail. <span>butovo@tour-msk.pro</span></p>
+                        </div>
+                        <div class="fotter_bottom-place">
+                            <p><strong>Домодедовская,</strong> <br> ТК VEGAS (между 1-м и 2-м входом, 2 эт.) </p>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fotter_bottom-title">Турагентство<br> TUI</div>
+                        <div class="fotter_bottom-contakt">
+                            <p>Тел. <span>+7 (495) 221 19 87</span></p>
+                            <p>Моб. <span>+7 (495) 221 19 87</span></p>
+                            <p>e-mail. <span>butovo@tour-msk.pro</span></p>
+                        </div>
+                        <div class="fotter_bottom-place">
+                            <p><strong> Домодедовская,ТК VEGAS </strong><br> (между 1-м и 2-м входом, 2 эт.) </p>
+                            <p><strong>Улица Bazaar,</strong> <br> пересечение 24 км. МКАД и Каширского шоссе </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="fotter_super ">
+            <div class="wrap unwrap ">
+
+                <div class="fotter_super-copy ">
+                    <p>ООО «Туры От Профи»</p>
+                    <span class="fotter_line">
+                        Номер счёта: 40702810901870000156 <br>
+                        Банк получателя: АО "АЛЬФА-БАНК"<br>
+                        Кор.счёт: 30101810200000000593
+                    </span>
+                    <span>
+                        БИК: 044525593   |   ИНН: 7727379137<br>
+                        ОГРН: 1187746613086 <br>
+                        КПП: 772701001
+                    </span>
+                </div>
+                <div class="fotter_super-copy ">
+                    <p>Принимаем к оплате:</p>
+                    <div class="fotter_super-payman">
+                        <img src="images/payments.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/pgwslider.min.js" type="text/javascript"></script>
+</body>
+
+</html>

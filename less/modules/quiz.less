@@ -1,0 +1,113 @@
+@import url(../setup/_setup.less);
+
+
+.quiz {
+    background: #617fdd url(../images/lights.png) no-repeat center -20px;
+    background-size: 115%;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 450px;
+    padding: 30px;
+
+    &:before {
+        content: url(../images/shezlong.png);
+        margin-top: -263px;
+        display: block;
+    }
+
+    h4 {
+        font-size: 180%;
+
+        color: #fff;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .des {
+        width: 100%;
+        text-align: center;
+        color: #b4c6ff;
+        font-size: 16px;
+    }
+
+    &_title {
+        width: 100%;
+        text-align: center;
+        color: #b4c6ff;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    &_user {
+        display: flex;
+        background-color: #4a6acc;
+        border-radius: 6px;
+        padding: 10px;
+        height: 70px;
+        box-sizing: border-box;
+        max-width: 97%;
+        margin-left: 16px;
+
+        p {
+            font-size: 22px;
+            font-weight: 900;
+            margin-bottom: 2px;
+        }
+
+        span {
+            font-weight: 300;
+        }
+
+        img {
+            margin-left: -30px;
+            width: 75px;
+            height: 75px;
+            margin-right: 13px;
+            border-radius: 50%;
+            border: 8px solid #3153aa;
+            margin-top: -13px;
+        }
+    }
+
+    &_steps {
+        height: 450px;
+        display: flex;
+        align-items: center;
+        //  overflow: hidden;
+        padding: 0 25px;
+
+        .btn {
+            margin-top: 20px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        &-title {
+            padding-top: 10px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 130%;
+            margin-bottom: 25px;
+        }
+
+        &-step {
+            display: none;
+
+            span {
+                display: block;
+            }
+
+            select {
+                width: 100%;
+            }
+        }
+    }
+}

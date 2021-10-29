@@ -1,0 +1,173 @@
+﻿//FONTS
+@mainFont: 'MuseoSansCyr';
+@import url(../setup/_setup.less);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @black;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: @mainFont;
+  src: local("☺"),
+    url("../fonts/MuseoSansCyrl900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl900.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl900.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: @mainFont;
+  src: local("☺"),
+    url("../fonts/MuseoSansCyrl500.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl500.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: @mainFont;
+  src: local("☺"),
+    url("../fonts/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl300.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: @mainFont;
+  src: local("☺"),
+    url("../fonts/MuseoSansCyrl100.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MuseoSansCyrl100.woff") format("woff"),
+    url("../fonts/MuseoSansCyrl100.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+.popup{ display: none;}
+//BODY
+body {
+  font-family: @mainFont, "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: @black;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  height: 100%;
+
+  &.fix {
+    overflow: hidden !important;
+
+    .overlay {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: block;
+      background: #000000a1;
+      z-index: 99;
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+}
+
+footer,
+header,
+section {
+  flex: 100%;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+
+}
+
+//DEF
+
+section {
+  padding: 110px 0 90px;
+
+  @media (max-width: 1020px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 50px 0;
+  }
+}
+
+.wrap,
+h2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.smart {
+
+  .wrap {
+    width: 100%;
+    max-width: 1000px;
+  }
+  &_content{ width: 100%;max-width: 600px;}
+}
+
+.wrap {
+  @media (max-width: 480px) {
+    padding: 5px 20px;
+  }
+}
+
+.nowrap{ display: flex; flex-wrap: nowrap;}
+.unwrap,
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @media (max-width: 1020px) {
+    flex-wrap: wrap;
+  }
+}
+
+// ADAPTIVE
+.c6 {
+  flex: 30%;
+  max-width: 32%;
+
+  @media (max-width: 1020px) {
+    flex: 50%;
+    max-width: 47%;
+  }
+
+  @media (max-width: 480px) {
+    flex: 100%;
+    max-width: 98%;
+  }
+}
+
+.grey {
+  background-color: @grey;
+}
+
+//
