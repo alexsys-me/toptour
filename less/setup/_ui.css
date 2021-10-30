@@ -31,6 +31,9 @@ h6 {
   font-weight: 100;
   font-style: normal;
 }
+.popup {
+  display: none;
+}
 body {
   font-family: 'MuseoSansCyr', "Helvetica", "Arial", sans-serif;
   font-size: 16px;
@@ -75,6 +78,8 @@ header,
 section {
   flex: 100%;
   width: 100%;
+  z-index: 10;
+  position: relative;
 }
 section {
   padding: 110px 0 90px;
@@ -108,6 +113,10 @@ h2 {
     padding: 5px 20px;
   }
 }
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
 .unwrap,
 .row {
   display: flex;
@@ -137,7 +146,7 @@ h2 {
   }
 }
 .grey {
-  background: #f4f6fa;
+  background-color: #f4f6fa;
 }
 .cyan {
   color: #3e6ad9;
@@ -275,6 +284,10 @@ h4 {
 .btn.orange {
   color: #fff;
   background: #ffb922;
+}
+.btn.orange:hover {
+  color: #3e6ad9;
+  background: #fff;
 }
 :-ms-input-placeholder,
 ::-webkit-input-placeholder,
