@@ -15,39 +15,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.facebook:before {
-  content: '\e900';
+.wp-icon:before {
+  content: '\ea93';
+  float: right;
+  margin-left: 10px;
 }
-.vk:before {
-  content: '\e90b';
-}
-.insta:before {
-  content: '\e90d';
-}
-.twit:before {
-  content: '\e906';
-}
-.yb:before {
-  content: '\e909';
-}
-.ok:before {
-  content: '\e90a';
-}
-.exit:before {
+.timer:before {
   content: '\e901';
 }
-.compare:before {
-  content: '\e908';
+.fire:before {
+  content: '\e9a9';
 }
-.sendwich:before {
-  content: '\e9bd';
+.plane:before {
+  content: '\e9af';
 }
-.sendwich:before {
-  content: '\e9bd';
+.close:before {
+  content: '\ea0f';
 }
-input[type="checkbox"]:checked + span:after {
-  content: '\e90c';
+.wp:before {
+  content: '\ea93';
 }
-input[type="radio"]:checked + span:after {
-  content: '\e90c';
+.exit:before {
+  content: '\ea0f';
 }

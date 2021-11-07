@@ -1,5 +1,75 @@
 @import url(../setup/_setup.less);
 
+.dlg-modal {
+    .quiz {
+        background: #ffffff;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+
+        &:before {
+            margin: auto;
+            position: absolute;
+            right: -80px;
+            bottom: 110px;
+        }
+
+
+        &::after {
+            content: '';
+            width: 280px;
+            right: 30px;
+            bottom: 2px;
+            position: absolute;
+            height: 70px;
+            display: block;
+            background: url(../images/s-logo.png) no-repeat center center;
+            background-size: contain;
+        }
+
+        h4 {
+            color: @main;
+            text-align: left;
+            width: 100%;
+        }
+
+        &_title {
+            color: #5b5b5b;
+            text-align: left;
+        }
+
+        &_user {
+            display: none;
+        }
+        .sub_title {
+            color:#5b5b5b; text-align: left;
+        }
+        &_steps {
+            padding: 0;
+            align-items: flex-start;
+            max-width: 460px;
+            height: 466px;
+            &-title {
+                color: #5b5b5b;
+                text-align: left;
+            }
+        }
+
+        .des {
+            color: #5b5b5b;
+            text-align: left;    margin-top: -30px;
+        }
+
+        label {
+            color: #000;
+        }
+    }
+
+}
+
 
 .quiz {
     background: #617fdd url(../images/lights.png) no-repeat center -20px;
@@ -11,8 +81,22 @@
 
     &:before {
         content: url(../images/shezlong.png);
-        margin-top: -263px;
+        margin-top: -300px;
         display: block;
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+
+    select.blue {
+        background-color: #9db2f4 !important;
+        color: #fff;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        border: none;
+        box-shadow: inset -3px 5px 4px 2px rgba(118, 145, 230, .7);
     }
 
     h4 {
@@ -37,6 +121,40 @@
         font-size: 18px;
         display: block;
         margin-bottom: 35px;
+    }
+
+    input[type="checkbox"]+span:before,
+    input[type="radio"]+span:before {
+        border: none;
+        background-color: #9db2f5;
+        border-radius: 3px;
+    }
+
+    .dev-num {
+        position: relative;
+
+        span {
+            color: @main;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+            display: block;
+            width: 50px;
+
+            &.befor {
+                left: 20px;
+            }
+        }
+    }
+
+    label {
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .sub_title {
+        margin-bottom: 10px;
+        padding-top: 10px;
     }
 
     &_user {
@@ -71,11 +189,21 @@
     }
 
     &_steps {
-        height: 450px;
+        height: 490px;
         display: flex;
         align-items: center;
         //  overflow: hidden;
         padding: 0 25px;
+
+        em {
+            text-align: center;
+            font-size: 80%;
+            font-style: normal;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0;
+        }
 
         .btn {
             margin-top: 20px;
@@ -87,6 +215,7 @@
             max-width: 100%;
             margin: 0;
             margin-bottom: 15px;
+            text-align: center;
         }
 
         &-title {
@@ -100,6 +229,7 @@
 
         &-step {
             display: none;
+            width: 100%;
 
             span {
                 display: block;

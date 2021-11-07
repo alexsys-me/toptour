@@ -1,12 +1,14 @@
 $(document).ready(function() {
-    /*
-        $(".menutriger").click(function() {
-            $(".megamenu").toggleClass("active");
-            $("body").toggleClass("fix");
-        });
 
-        */
+    $(".menutriger").click(function() {
+        $(".megamenu").toggleClass("active");
+        $("html").toggleClass("fix");
+    });
+
+
+
     $('.pgwSlider').pgwSlider();
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,

@@ -3,6 +3,130 @@
 .menutriger,
 .megamenu {
     display: none;
+
+}
+
+@media (max-width: 480px) {
+
+    .menutriger,
+    .megamenu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+.menutriger {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    &.overlay:before{ display: none;}
+    &:before {
+        font-family: "icomoon" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\e903';
+        margin-top: 10px;
+        font-size: 35px;
+        display: block;
+        margin-left: 16px;
+    }
+}
+
+.megamenu.active {
+    left: 0;
+    transition: .2s;
+}
+
+
+.megamenu {
+    .menutriger {
+        float: right;
+        color: #3e6ad9;
+        margin-top: 10px;
+        margin-right: -10px;
+        overflow: hidden;
+
+        &:before {
+            content: '\ea0f';
+            font-size: 14px;
+        }
+    }
+
+    transition: .2s;
+    left: -100%;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 99999;
+    width: 95%;
+    height: 100%;
+    display: block;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    padding-left: 50px;
+
+    img {
+        margin-top: 40px;
+        margin-left: 36px;
+        margin-bottom: 20px;
+    }
+
+    .fix_menu {
+        padding-top: 25px;
+
+        li {
+            margin-bottom: 15px;
+
+            a {
+                color: #323b52;
+                font-size: 130%;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .sub_menu {
+        padding-top: 15px;
+        border-top: 1px solid #cecece;
+        width: 90%;
+        margin-top: 5px;
+
+        li {
+            padding-top: 10px;
+
+            a {
+                font-size: 110%;
+                color: #535b6f;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .super_setting {
+        &-contakt {
+            margin-left: 50px;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .btn {
+            margin-left: 0;
+            margin-top: 20px;
+            max-width: 80%;
+        }
+    }
 }
 
 .bredcrumb {
@@ -11,6 +135,10 @@
     margin: auto;
     display: flex;
     margin-top: 20px;
+
+    @media (max-width: 770px) {
+        padding-left: 20px;
+    }
 
     a:after {
         content: '';
@@ -44,6 +172,7 @@
 
 .bredcrumb+.banner_title {
     padding-top: 30px;
+
     h1 {
         text-align: left;
         max-width: 450px;
@@ -54,6 +183,23 @@
         max-width: 700px;
 
     }
+}
+body:not(.homepage){    
+    .banner{
+        @media (max-width: 480px) {
+            height: auto!important;
+            padding-bottom: 40px;
+            background-position: top left!important;
+            background-size: cover!important;
+        }
+    }
+    .search{    margin-top: -30px;}
+    .hot_tour{padding: 0 40px;}
+    
+}
+
+body.homepage{
+    .installments{  max-width: 100%;}  
 }
 
 .banner {
@@ -67,16 +213,25 @@
     overflow: hidden;
     height: 400px;
     display: block;
-    background-color:#316ce3;
+    background-color: #316ce3;
+  
+  
 
     h1 {
         text-align: center;
         font-size: 250%;
+        @media (max-width: 480px) {
+            font-size: 240%;
+        }
     }
 
     &_title {
         padding-top: 90px;
         padding-left: 50px;
+
+        @media (max-width: 480px) {
+            padding: 40px 20px;
+        }
     }
 
     span {
@@ -85,8 +240,11 @@
         line-height: 150%;
         width: 100%;
         text-align: center;
-
         display: block;
+        @media (max-width: 480px) {
+            line-height: 120%;
+        }
+        
     }
 }
 
@@ -94,6 +252,10 @@
     padding: 10px 0;
     color: #afafaf;
     font-size: 12px;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 
     a {
         color: #afafaf;
@@ -114,14 +276,36 @@
 
     .time_work {
         margin-right: 50px;
+
+        &:before {
+            font-family: "icomoon" !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: '\e901';
+            margin-right: 6px;
+            margin-top: 1px;
+        }
     }
 }
 
 .super_setting {
     display: flex;
 
+    @media (max-width: 480px) {
+        display: none;
+    }
+
     &-contakt {
         padding-right: 50px;
+
+        @media (max-width: 770px) {
+            padding-right: 20px;
+        }
 
         a {
             display: block;
@@ -132,6 +316,10 @@
                 font-size: 30px;
                 text-decoration: none;
 
+                @media (max-width: 770px) {
+                    font-size: 25px;
+                }
+
                 &:hover {
                     color: #15378e
                 }
@@ -139,14 +327,11 @@
 
             &.wp-icon {
                 color: #afafaf;
-                font-style: 16px;
+                font-size: 16px;
                 font-weight: 500;
                 height: 24px;
                 margin: 5px 0;
                 text-decoration: none;
-                padding-right: 30px;
-                background: url(../images/wp.png) no-repeat right top;
-                background-size: 19px;
 
                 &:hover {
                     color: @main;
@@ -163,6 +348,10 @@ header {
 
     .super {
         padding: 20px 5px;
+
+        @media (max-width: 480px) {
+            padding: 10px 5px;
+        }
     }
 }
 
@@ -207,8 +396,27 @@ header {
         padding: 25px 0;
         font-size: 20px;
 
+        @media (max-width: 770px) {
+            padding: 15px 0;
+            font-size: 17px;
+        }
+
         &:hover {
             color: @main;
         }
+    }
+}
+
+.super_logo {
+    @media (max-width: 770px) {
+        padding-left: 20px;
+
+        img {
+            max-width: 220px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding-left: 10px;
     }
 }

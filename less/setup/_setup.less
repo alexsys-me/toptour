@@ -1,7 +1,9 @@
 ﻿//FONTS
 @mainFont: 'MuseoSansCyr';
 @import url(../setup/_setup.less);
-
+.fix{
+  overflow: hidden!important;
+}
 h1,
 h2,
 h3,
@@ -21,6 +23,7 @@ h6 {
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: @mainFont;
   src: local("☺"),
@@ -30,6 +33,7 @@ h6 {
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: @mainFont;
   src: local("☺"),
@@ -39,6 +43,7 @@ h6 {
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: @mainFont;
   src: local("☺"),
@@ -48,7 +53,11 @@ h6 {
   font-weight: 100;
   font-style: normal;
 }
-.popup{ display: none;}
+
+.popup {
+  display: none;
+}
+
 //BODY
 body {
   font-family: @mainFont, "Helvetica", "Arial", sans-serif;
@@ -85,6 +94,12 @@ body {
     }
   }
 
+  @media (max-width: 1020px) {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   @media (max-width: 375px) {
     max-width: 100%;
     overflow-x: hidden;
@@ -100,6 +115,9 @@ section {
   z-index: 10;
   position: relative;
 
+  @media (max-width: 1020px) {
+    width: 90%;
+  }
 }
 
 //DEF
@@ -121,6 +139,10 @@ h2 {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+
+  @media (max-width: 1020px) {
+    padding: 0px 20px;
+  }
 }
 
 .smart {
@@ -128,8 +150,20 @@ h2 {
   .wrap {
     width: 100%;
     max-width: 1000px;
+
+    @media (max-width: 13660px) {
+      max-width: 1200px;
+    }
+
+    @media (max-width: 1020px) {
+      padding: 0px 20px;
+    }
   }
-  &_content{ width: 100%;max-width: 600px;}
+
+  &_content {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 .wrap {
@@ -138,7 +172,14 @@ h2 {
   }
 }
 
-.nowrap{ display: flex; flex-wrap: nowrap;}
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  @media (max-width: 480px) {
+    flex-wrap: wrap;
+  }
+}
+
 .unwrap,
 .row {
   display: flex;

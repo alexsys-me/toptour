@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Totour</title>
     <link rel="apple-touch-icon" sizes="120x120" href="image/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicons/favicon-32x32.png">
@@ -15,6 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/popup.style.css">
     <!-- <link rel="stylesheet" href="css/main.css">   
     <link rel="stylesheet" href="css/_setup.css">
     <link rel="stylesheet" href="css/_reboot.css">
@@ -42,102 +43,15 @@
 
 <body class="homepage">
     <!----SELECT_TOUR_WINDOW--->
-    <div class="popup">
-        <div class="popup_close"></div>
-        <div class="quiz white">
-            <h4>Индивидуальный <br> подбор тура</h4>
-            <span class="quiz_title">ответьте на 5 вопросов бота Емели</span>
-            <div class="quiz_user ">
-                <img src="images/user.png" alt="">
-                <div class="quiz_user_text">
-                    <p>Бот Емеля</p>
-                    <span>менедженр по туризму</span>
-                </div>
-            </div>
-            <form class="quiz_steps">
-                <div class="quiz_steps-step step-1" style="display:block">
-                    <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
 
-                    <input type="text" class="input-blue">
-                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                </div>
-                <div class="quiz_steps-step step-2">
-
-                    <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
-                    <label><input type="checkbox" ><span></span>Пляжный отдых</label>
-                    <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
-                    <label><input type="checkbox" ><span></span>Новогодний тур</label>
-                    <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
-                    <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
-                    <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
-                    <label><input type="checkbox" ><span></span>Морской Круиз</label>
-                    <label><input type="checkbox" ><span></span>Горящий тур</label>
-                    <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
-
-                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                </div>
-                <div class="quiz_steps-step step-3">
-                    <div class="quiz_steps-title">Укажите количество человек в туре</div>
-                    <span>Количество взрослых</span>
-                    <select>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                </select>
-                    <span>Количество детей</span>
-                    <select>
-                    <option value="1"></option>
-                    <option value="2"></option>
-                    <option value="3"></option>
-                    <option value="4"></option>
-                </select>
-                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                </div>
-
-                <div class="quiz_steps-step step-4">
-                    <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
-
-                    <div class="dev-num">
-                        <input type="text" class="input-blue">
-                        <span>дней</span>
-                    </div>
-                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                </div>
-
-
-                <div class="quiz_steps-step step-5">
-                    <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
-                    <div class="dev-num">
-                        <input type="text" class="input-blue">
-                        <span class="befor">до</span>
-                        <span>рублей</span>
-                    </div>
-                    <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                </div>
-
-                <div class="quiz_steps-step step-6">
-                    <div class="quiz_steps-title">Укажите данные для связи</div>
-                    <input type="text" class="input-blue">
-                    <em>менеджер оповестит вас
-                    о подходящих турах, акциях по соотношению цена,
-                    качества, ваши интересы</em>
-                    <button class="btn orange">Оставить заявку</button>
-                </div>
-
-            </form>
-            <div class="des">подберем идеальный тур индвидуально для Вас</div>
-        </div>
-    </div>
-    <div class="menutriger overlay"></div>
     <div class="megamenu">
-        <div class="close menutriger">x</div>
+        <div class="close menutriger"></div>
         <div class="super_logo">
             <img src="images/s-logo.png" />
         </div>
         <div class="super_setting">
             <div class="super_setting-contakt">
-                <a href="#" class="wp-icon">написать в WhatsApp</a>
+                <a href="#" class="wp-icon icon">написать в WhatsApp</a>
                 <a href="tel:74952211987" class="phone"> +7 (495) 221 19 87</a>
             </div>
             <a href="#" class="btn blue plane-icon"> подобрать тур</a>
@@ -151,7 +65,7 @@
             <li class="menu_li"><a href="#">О компании</a></li>
             <li class="menu_li"><a href="#">Где купить</a></li>
         </ul>
-        <ul classs="sub_menu">
+        <ul class="sub_menu">
             <li><a href="#">Визы и документы</a></li>
             <li><a href="#">Акции</a></li>
             <li><a href="#">Корпоративным клиентам</a></li>
@@ -176,10 +90,10 @@
             </div>
             <div class="super_setting">
                 <div class="super_setting-contakt">
-                    <a href="#" class="wp-icon">написать в WhatsApp</a>
+                    <a href="#" class="wp-icon icon">написать в WhatsApp</a>
                     <a href="tel:74952211987" class="phone"> +7 (495) 221 19 87</a>
                 </div>
-                <a href="#" class="btn blue plane-icon"> подобрать тур</a>
+                <a href="#" class="btn blue plane-icon" data-modal="modal_2"> подобрать тур</a>
             </div>
 
         </div>
@@ -198,7 +112,7 @@
 
     <div class="banner" style=" background: url(images/main-bann_main.jpg);">
         <div class="banner_title wrap ">
-            <h1>Подберите доступные туры o nline</h1>
+            <h1>Подберите доступные туры online</h1>
             <span>поиск от всех отператоров</span>
         </div>
     </div>
@@ -213,7 +127,8 @@
             });
         </script>
         <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
-
+        <br>
+        <br>
         <!----tours---->
         <div class="tours">
             <a href="#" class="tours_keys">
@@ -297,76 +212,82 @@
                         </div>
                     </div>
                     <form class="quiz_steps">
-                        <div class="quiz_steps-step step-1" style="display:block">
-                            <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
+                        <div class="quiz_slider">
 
-                            <input type="text" class="input-blue">
-                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                        </div>
-                        <div class="quiz_steps-step step-2">
 
-                            <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
-                            <label><input type="checkbox" ><span></span>Пляжный отдых</label>
-                            <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
-                            <label><input type="checkbox" ><span></span>Новогодний тур</label>
-                            <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
-                            <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
-                            <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
-                            <label><input type="checkbox" ><span></span>Морской Круиз</label>
-                            <label><input type="checkbox" ><span></span>Горящий тур</label>
-                            <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
+                            <div class="quiz_steps-step step-1" style="display:block">
+                                <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
 
-                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                        </div>
-                        <div class="quiz_steps-step step-3">
-                            <div class="quiz_steps-title">Укажите количество человек в туре</div>
-                            <span>Количество взрослых</span>
-                            <select>
+                                <input type="text" class="input-blue">
+                                <button class="next-step btn white">СЛЕДУЮЩИЙ ШАГ</button>
+                            </div>
+                            <div class="quiz_steps-step step-2">
+
+                                <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
+                                <label><input type="checkbox" ><span></span>Пляжный отдых</label>
+                                <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
+                                <label><input type="checkbox" ><span></span>Новогодний тур</label>
+                                <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
+                                <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
+                                <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
+                                <label><input type="checkbox" ><span></span>Морской Круиз</label>
+                                <label><input type="checkbox" ><span></span>Горящий тур</label>
+                                <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
+
+                                <button class="btn white next-step">СЛЕДУЮЩИЙ ШАГ</button>
+                            </div>
+                            <div class="quiz_steps-step step-3">
+                                <div class="quiz_steps-title">Укажите количество человек в туре</div>
+                                <span>Количество взрослых</span>
+                                <select>
                             <option value="1"></option>
                             <option value="2"></option>
                             <option value="3"></option>
                             <option value="4"></option>
                         </select>
-                            <span>Количество детей</span>
-                            <select>
+                                <span>Количество детей</span>
+                                <select>
                             <option value="1"></option>
                             <option value="2"></option>
                             <option value="3"></option>
                             <option value="4"></option>
                         </select>
-                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                        </div>
-
-                        <div class="quiz_steps-step step-4">
-                            <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
-
-                            <div class="dev-num">
-                                <input type="text" class="input-blue">
-                                <span>дней</span>
+                                <button class="btn white next-step">СЛЕДУЮЩИЙ ШАГ</button>
                             </div>
-                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                        </div>
 
+                            <div class="quiz_steps-step step-4">
+                                <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
 
-                        <div class="quiz_steps-step step-5">
-                            <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
-                            <div class="dev-num">
-                                <input type="text" class="input-blue">
-                                <span class="befor">до</span>
-                                <span>рублей</span>
+                                <div class="dev-num">
+                                    <input type="text" class="input-blue">
+                                    <span>дней</span>
+                                </div>
+                                <button class="btn white next-step">СЛЕДУЮЩИЙ ШАГ</button>
                             </div>
-                            <button class="btn white">СЛЕДУЮЩИЙ ШАГ</button>
-                        </div>
 
-                        <div class="quiz_steps-step step-6">
-                            <div class="quiz_steps-title">Укажите данные для связи</div>
-                            <input type="text" class="input-blue">
-                            <em>менеджер оповестит вас
-                            о подходящих турах, акциях по соотношению цена,
-                            качества, ваши интересы</em>
-                            <button class="btn orange">Оставить заявку</button>
-                        </div>
 
+                            <div class="quiz_steps-step step-5 ">
+                                <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
+                                <div class="dev-num">
+                                    <input type="text" class="input-blue">
+                                    <span class="befor">до</span>
+                                    <span>рублей</span>
+                                </div>
+                                <button class="btn white next-step">СЛЕДУЮЩИЙ ШАГ</button>
+                            </div>
+
+                            <div class="quiz_steps-step step-6">
+                                <div class="quiz_steps-title">Укажите данные для связи</div>
+                                <span class="sub_title">Ваша Фамилия, Имя</span>
+                                <input type="text" class="input-blue">
+                                <span class="sub_title">Ваш телефон</span>
+                                <input type="text" class="input-blue">
+                                <em>менеджер оповестит вас
+                                о подходящих турах, акциях по соотношению цена,
+                                качества, ваши интересы</em>
+                                <button class="btn orange">Оставить заявку</button>
+                            </div>
+                        </div>
                     </form>
                     <div class="des">подберем идеальный тур индвидуально для Вас</div>
                 </div>
@@ -590,7 +511,102 @@
             </div>
         </div>
     </footer>
+    <div id="modal_2" class="dlg-modal dlg-modal-fade">
+        <div class="closer" data-close=""></div>
+        <div class="quiz white">
+            <h4>Индивидуальный <br> подбор тура</h4>
+            <span class="quiz_title">ответьте на 5 вопросов бота Емели</span>
+            <div class="quiz_user ">
+                <img src="images/user.png" alt="">
+                <div class="quiz_user_text">
+                    <p>Бот Емеля</p>
+                    <span>менедженр по туризму</span>
+                </div>
+            </div>
+            <form class="quiz_steps">
+                <div class="quiz_steps-step step-1" style="display:block">
+                    <div class="quiz_steps-title">В какой стране в хотите отдохнуть?</div>
+
+                    <input type="text" class="input-blue">
+                    <button class="btn blue">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+                <div class="quiz_steps-step step-2">
+
+                    <label><input type="checkbox" ><span></span>Экскурсионный тур</label>
+                    <label><input type="checkbox" ><span></span>Пляжный отдых</label>
+                    <label><input type="checkbox" ><span></span>Отдых в отеле повышенного уровня</label>
+                    <label><input type="checkbox" ><span></span>Новогодний тур</label>
+                    <label><input type="checkbox" ><span></span>Свадебный тур (для медового месяца)</label>
+                    <label><input type="checkbox" ><span></span>Оздоровление и SPA отдых</label>
+                    <label><input type="checkbox" ><span></span>Горнолыжный тур</label>
+                    <label><input type="checkbox" ><span></span>Морской Круиз</label>
+                    <label><input type="checkbox" ><span></span>Горящий тур</label>
+                    <label><input type="checkbox" ><span></span>Ранее бронирование (скидки до 40%)</label>
+
+                    <button class="btn blue">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+                <div class="quiz_steps-step step-3">
+                    <div class="quiz_steps-title">Укажите количество человек в туре</div>
+                    <span>Количество взрослых</span>
+                    <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                    <span>Количество детей</span>
+                    <select>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                </select>
+                    <button class="btn blue">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+                <div class="quiz_steps-step step-4">
+                    <div class="quiz_steps-title">Как долга вы собираетесь путешествовать?</div>
+
+                    <div class="dev-num">
+                        <input type="text" class="input-blue">
+                        <span>дней</span>
+                    </div>
+                    <button class="btn blue">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+
+                <div class="quiz_steps-step step-5">
+                    <div class="quiz_steps-title">Укажите до какого бюджета искать</div>
+                    <div class="dev-num">
+                        <input type="text" class="input-blue">
+                        <span class="befor">до</span>
+                        <span>рублей</span>
+                    </div>
+                    <button class="btn blue">СЛЕДУЮЩИЙ ШАГ</button>
+                </div>
+
+                <div class="quiz_steps-step step-6">
+                    <div class="quiz_steps-title">Укажите данные для связи</div>
+                    <span class="sub_title">Ваша Фамилия, Имя</span>
+                    <input type="text" class="input-blue">
+                    <span class="sub_title">Ваш телефон</span>
+                    <input type="text" class="input-blue">
+                    <em>менеджер оповестит вас
+                    о подходящих турах, акциях по соотношению цена,
+                    качества, ваши интересы</em>
+                    <button class="btn orange">Оставить заявку</button>
+                </div>
+
+            </form>
+            <div class="des">подберем идеальный тур индвидуально для Вас</div>
+        </div>
+    </div>
+    <div class="overlay" data-close=""></div>
     <script src="js/pgwslider.min.js" type="text/javascript"></script>
+    <script>
+        const typeAnimate = 'fade';
+    </script>
+    <script src="js/popup.function.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,16 @@
         line-height: 140%;
     }
 
+    @media (max-width: 770px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: 770px) {
+        img {
+            display: none;
+        }
+    }
+
     &.left-derection {
         .wrap {
             display: flex;
@@ -18,23 +28,90 @@
             align-items: flex-start;
 
             img {
-                margin-left: -200px;margin-top: -160px;margin-right: 50px;
+                margin-left: -200px;
+                margin-top: -160px;
+                margin-right: 50px;
             }
         }
     }
 }
 
-section.russian{
+section.russian {
     padding-bottom: 200px;
-}
-.plane_bg{
-    .wrap{    display: flex;
-        img{    margin-left: -180px;
-            margin-top: -150px;
-            margin-right: 50px;
-            margin-bottom: 100px;}
+
+    @media (max-width: 480px) {
+        padding-bottom: 70px;
     }
 }
+
+.plane_bg {
+    .wrap {
+        display: flex;
+
+        @media (max-width: 770px) {
+            margin-top: -100px;
+        }
+
+        img {
+            margin-left: -180px;
+            margin-top: -150px;
+            margin-right: 50px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+
+.flagcasae {
+    flex: 100%;
+
+    .row {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        max-width: 160px;
+        min-width: 160px;
+        margin-right: 30px;
+        flex: 160px;
+        color: #494949;
+        border-bottom: 2px solid @main;
+        padding-bottom: 10px;
+        height: 30px;
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+
+    .col {
+        flex-grow: 2;
+        flex-wrap: wrap;
+        display: flex;
+
+        p {
+            flex: 33%;
+            display: flex;
+            max-width: 33%;
+            margin-bottom: 20px;
+            color: #717171;
+            font-size: 20px;
+            @media (max-width: 480px) {
+                max-width: 100%;
+            }
+        
+        }
+
+        img {
+            margin-right: 15px;
+
+            @media (max-width: 480px) {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+
+
 .installments {
     background: #6280dd;
     border-radius: 20px;
@@ -49,8 +126,22 @@ section.russian{
     max-width: 1200px;
     margin-top: -260px;
 
+    @media (max-width: 480px) {
+        padding: 70px 40px 40px !important;
+        background-position: center bottom;
+        max-width: 90%;
+    }
+
+    @media (max-width: 770px) {
+        padding: 40px 0;
+        padding-left: 50px;
+        margin-top: -70px;
+    }
+
     h2 {
         color: #fff;
+
+
     }
 
     &_birka {
@@ -64,6 +155,11 @@ section.russian{
         font-weight: 500;
         padding: 10px 20px;
         z-index: 2;
+
+        @media (max-width: 480px) {
+
+            font-size: 16px;
+        }
     }
 
     &_contetn {
@@ -90,12 +186,28 @@ section.russian{
         position: relative;
         z-index: 2;
 
+        @media (max-width: 480px) {
+            flex-wrap: wrap;
+        }
+
         input {
             margin-right: 20px;
+
+            @media (max-width: 480px) {
+                margin: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
 
             &.btn {
                 max-width: 280px;
                 margin-left: 0;
+
+                @media (max-width: 480px) {
+                    max-width: 100%;
+                }
             }
         }
 
@@ -106,12 +218,21 @@ section.russian{
         right: -34px;
         bottom: -71px;
         z-index: 1;
+
+        @media (max-width: 770px) {
+            width: 400px;
+            right: -110px;
+        }
     }
 }
 
 .palm {
     position: relative;
     padding-top: 130px;
+
+    @media (max-width: 480px) {
+        padding-top: 100px;
+    }
 
     h2 {
         text-align: center;
@@ -138,6 +259,11 @@ section.russian{
         padding: 40px;
         box-sizing: border-box;
 
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
         h5 {
             font-size: 22px;
             line-height: 120%;
@@ -159,6 +285,10 @@ section.russian{
     text-align: center;
     padding-top: 50px;
 
+    @media (max-width: 480px) {
+        padding-bottom: 60px;
+    }
+
     img {
         margin: auto;
         margin-bottom: 50px;
@@ -170,12 +300,20 @@ section.russian{
         margin: auto;
         max-width: 700px;
         text-align: center;
-        color: #5b5b5b
+        color: #5b5b5b;
+
+        @media (max-width: 480px) {
+            font-size: 26px;
+        }
     }
 }
 
 .brand {
-    margin-bottom: 170px;
+    margin-bottom: 140px;
+
+    @media (max-width: 480px) {
+        margin-bottom: 60px;
+    }
 
     .owl-dots {
         display: block;
@@ -189,6 +327,10 @@ section.russian{
 
 .fon_stambul.palm_bg {
     background: url(../images/fon_stambul.jpg) no-repeat 85% bottom, url(../images/palm_bg.jpg) no-repeat left bottom;
+
+    @media (max-width: 480px) {
+        padding-bottom: 350px;
+    }
 }
 
 
@@ -205,6 +347,18 @@ section.russian{
     background-image: url(../images/castle.png);
     background-position: left bottom;
     background-repeat: no-repeat;
+
+    @media (max-width: 480px) {
+        .pgwSlider {
+            display: none;
+        }
+
+        .quote {
+            padding: 0;
+        }
+
+        height: 630px;
+    }
 }
 
 
@@ -236,6 +390,11 @@ section.russian{
         position: relative;
         margin: 50px 0;
         margin-left: 10%;
+
+        @media (max-width: 480px) {
+
+            font-size: 120%;
+        }
 
         &:before {
             background: #f4f6fa url('../images/quote.png') center center no-repeat;
@@ -278,6 +437,13 @@ section.russian{
         }
     }
 
+    .btn {
+        @media (max-width: 480px) {
+            max-width: 200px;
+            margin-top: 30px;
+        }
+    }
+
     ol {
         li {
             font-size: 150%;
@@ -310,32 +476,71 @@ section.russian{
     min-height: 370px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .10);
     z-index: 999;
+
+    @media (max-width: 770px) {
+        padding: 20px 30px;
+    }
+
+    .tours {
+        @media (max-width: 480px) {
+            padding-top: 0px;
+            margin-top: -30px;
+        }
+    }
 }
 
 .for-tour {
     padding: 0 0 250px;
 
+    @media (max-width: 480px) {
+        padding: 0 0 50px;
+    }
+
     .tours_keys {
         max-width: 23%;
+
+        @media (max-width: 480px) {
+            max-width: 49%;
+        }
     }
-    &.clean_pad{
-    padding-bottom: 80px;
+
+    &.clean_pad {
+        padding-bottom: 80px;
+
+        @media (max-width: 480px) {
+            padding-bottom: 20px;
+            padding-top: 70px;
+        }
     }
 }
 
 .tours {
     display: flex;
-    padding-top: 50px;
+
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+    }
 
     &_keys {
         flex: 19%;
         overflow: hidden;
         position: relative;
         text-align: center;
-        height: 290px;
+        height: 255px;
         border-radius: 20px;
         max-width: 18%;
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+            max-width: 49%;
+            flex: 50%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            height: 220px;
+        }
 
         img {
             height: auto;
@@ -377,6 +582,17 @@ section.russian{
         margin-right: -80px;
         margin-left: 50px;
         margin-top: -120px;
+        margin-bottom: -60px;
+
+        @media (max-width: 480px) {
+            margin-right: -30px;
+            margin-left: -36px;
+            margin-top: 20px;
+
+            &:before {
+                margin-top: -120px;
+            }
+        }
     }
 
     &-frame {
@@ -385,6 +601,10 @@ section.russian{
         border-radius: 20px;
         box-shadow: 6px 8px 50px rgba(28, 34, 49, .15);
         padding: 50px 30px 0;
+
+        @media (max-width: 480px) {
+            flex-wrap: wrap;
+        }
     }
 
     .schowcase {
@@ -396,6 +616,13 @@ section.russian{
     .pgwSlider {
         margin-right: -150px;
         padding-left: 60px;
+
+        @media (max-width: 480px) {
+            margin-right: 0;
+            padding-left: 0px;
+            margin-left: -20px;
+            width: 100%;
+        }
     }
 }
 
@@ -409,12 +636,21 @@ section.russian{
     flex-wrap: wrap;
 
     &_article {
+        @media (max-width: 480px) {
+            flex: 48%;
+            max-width: 46%;
+            margin: 6px;
+            height: 140px;
+            border-radius: 15px
+        }
+
         position: relative;
         overflow: hidden;
         border-radius: 20px;
         flex: 23%;
-        margin: 10px;
         max-width: 23%;
+        margin: 10px;
+
         height: 300px;
         box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 
@@ -451,11 +687,20 @@ section.russian{
         margin: 10px;
         margin-bottom: 50px;
 
+        @media (max-width: 480px) {
+            flex: 100%;
+            max-width: 100%;
+        }
+
         &-img {
             overflow: hidden;
             border-radius: 20px;
             max-height: 270px;
             box-shadow: 1px 5px 16px rgba(0, 0, 0, .2);
+
+            img {
+                width: 100%;
+            }
         }
 
         &-title {
@@ -493,11 +738,16 @@ section.russian{
 .contakt {
     display: flex;
 
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+    }
 
     &_col {
         flex: 50%;
         position: relative;
-
+        @media (max-width: 480px) {
+            max-width: 100%;
+        }
         .col {
             margin-bottom: 50px;
         }
@@ -507,6 +757,11 @@ section.russian{
             font-size: 180%;
             height: auto;
             padding-bottom: 10px;
+
+            @media (max-width: 480px) {
+                height: 90px;
+                padding-bottom: 20px;
+            }
         }
 
         .fotter_bottom-contakt span {
@@ -530,6 +785,13 @@ section.russian{
     }
 
     &_phone {
+        @media (max-width: 480px) {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            margin-right: 0;
+        }
+
         position: absolute;
         top: 0;
         background-color: #fff;
@@ -569,36 +831,72 @@ ymaps {
     -o-filter: grayscale(1);
 }
 
-.specialist{
-    background: url(../images/palm.svg) no-repeat center 10px ;
-    h2{ text-align: center; margin-bottom: 40px;}
-    .descript{ text-align: center; font-size: 24px; margin-bottom:60px; font-weight: 100; line-height:140%;}
-    &_list{
-        display: flex;
-        justify-content:space-evenly;
-        padding-top: 150px;
+.specialist {
+    background: url(../images/palm.svg) no-repeat center 10px;
+
+    @media (max-width: 480px) {
+        margin-top: 50px;
     }
-    &_title{ font-size: 24px; font-weight: 900; margin-top:30px; margin-bottom: 10px;}
-    
-    &_item{
-        box-shadow:6px 8px 20px rgba(28, 34, 49, .08);
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .descript {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 60px;
+        font-weight: 100;
+        line-height: 140%;
+    }
+
+    &_list {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 150px;
+
+        @media (max-width: 480px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &_title {
+        font-size: 24px;
+        font-weight: 900;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    &_item {
+        box-shadow: 6px 8px 20px rgba(28, 34, 49, .08);
         border-radius: 10px;
         text-align: center;
         padding: 40px;
-        img{ border-radius:20px;    margin-top: -150px; }
-        p{}
-        strong{    display: block; padding-bottom: 30px;}
-        
+
+        img {
+            border-radius: 20px;
+            margin-top: -150px;
+        }
+
+        p {}
+
+        strong {
+            display: block;
+            padding-bottom: 30px;
+        }
+
     }
 }
 
-.bagaje{
-    &::before{
+.bagaje {
+    &::before {
         content: '';
         background: url(../images/adver-pic-2.png) no-repeat;
         width: 230px;
         height: 460px;
-        right: 0;    display: block;
+        right: 0;
+        display: block;
         position: absolute;
         bottom: 0;
     }

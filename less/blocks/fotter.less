@@ -16,6 +16,13 @@
     padding: 30px 0;
     display: flex;
 
+    @media (max-width: 770px) {
+      &-copy {
+        margin-bottom: 10px;
+      }
+    }
+
+
     p {
       font-size: 24px;
       font-weight: 500;
@@ -31,6 +38,13 @@
         border-right: 1px solid #97aef4;
         margin-right: 30px;
         padding-right: 30px;
+        @media (max-width: 480px) {
+          border: none;
+        }
+        @media (max-width: 770px) {
+          margin-right: 10px;
+          padding-right: 10px;
+        }
       }
     }
 
@@ -61,6 +75,11 @@
       padding-right: 30px;
       height: 130px;
       line-height: 130%;
+      @media (max-width: 480px) {
+        height: auto;    font-size: 27px;
+        padding-bottom: 20px;
+    }
+
     }
 
     &-contakt {
@@ -81,6 +100,9 @@
 }
 
 .review {
+  @media (max-width: 480px) {
+    display: none;
+  }
   &_titl {
     text-align: center;
     font-size: 18px;
@@ -113,9 +135,16 @@
 
   color: #fff;
   font-weight: 300;
-
+  
   .col {
-    flex: 30%
+    flex: 30%;
+    @media (max-width: 480px) {
+      flex: 100%!important;
+    }
+    @media (max-width:770px) {
+      flex: 40%;
+      padding-right: 20px;
+    }
   }
 
   &_form {
@@ -124,6 +153,9 @@
       max-width: 320px;
       margin-left: 0;
       margin-bottom: 20px;
+      @media (max-width: 480px) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -182,6 +214,9 @@
     font-size: 15px;
     max-width: 900px;
     line-height: 24px;
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 }
 
@@ -189,8 +224,13 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+
   li {
-    font-size: 18px; font-weight: 900; color: @main;margin: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    color: @main;
+    margin: 8px;
+
     &:first-child {
       margin-right: 15px;
     }
@@ -198,14 +238,16 @@
     &:last-child {
       margin-left: 15px;
     }
+
     a {
       color: #494949;
       text-decoration: none;
-      
+
       font-weight: 500;
-      font-size: 16px;    padding-bottom: 2px;
+      font-size: 16px;
+      padding-bottom: 2px;
       display: block;
-  
+
       &:hover {
         text-decoration: underline;
       }
